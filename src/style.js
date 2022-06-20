@@ -2,8 +2,37 @@ import { makeStyles } from '@mui/styles';
 
 const UseStyles = makeStyles({
   box: {
-    background: 'red',
+    backgroundColor: '#1b3b6f',
+    color: '#e8ebf1',
     height: '100vh',
+  },
+  NavBar: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    height: '10vh',
+  },
+  darkModeBtn: {
+    cursor: 'pointer',
+  },
+  hero: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    height: '80vh',
+  },
+  SV: {
+    display: 'flex',
+    flexDirection: 'column',
+  },
+
+  iconsHolder: {
+    position: 'absolute',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '200px',
+    justifyContent: 'space-between',
+    left: '50px',
   },
 });
 export default UseStyles;

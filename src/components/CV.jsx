@@ -1,5 +1,5 @@
 const CV = () => {
-  return <>Im CV</>;
+  return <div>Im CV</div>;
 };
 
 export default CV;

@@ -1,0 +1,66 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #e8ebf1;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Responsiveness */
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Remove input arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* ALL COPYRIGHT RESERVED For molaraiche, Please consider to let this comment in the field for reserving my right in creating this file, i hope he help everyone use it  , happy coding */
+
+#dark {
+  background-color: #1b3b6f;
+  color: #e8ebf1;
+}
+#light {
+  background-color: #e8ebf1;
+  color: #1b3b6f;
+}
+
+#light a {
+  color: #1b3b6f;
+}

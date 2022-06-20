@@ -1,5 +1,8 @@
+// import UseStyles from '../style';
 const Sliders = () => {
-  return <> Im Sliders</>;
+  // const classes = UseStyles();
+
+  return <>sliders</>;
 };
 
 export default Sliders;
