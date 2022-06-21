@@ -17,7 +17,7 @@ const App = () => {
       <div className='container'>
         <div className={classes.hero}>
           <Social />
-          <div className={classes.SV}>
+          <div>
             <Sliders />
             <CV />
           </div>

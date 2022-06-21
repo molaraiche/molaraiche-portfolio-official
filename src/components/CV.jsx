@@ -1,13 +1,8 @@
+import UseStyles from '../style';
+
 const CV = () => {
-  return (
-    <div
-      style={{
-        display: 'none',
-      }}
-    >
-      Im CV
-    </div>
-  );
+  const classes = UseStyles;
+  return <button>Download CV</button>;
 };
 
 export default CV;

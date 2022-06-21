@@ -21,10 +21,6 @@ const UseStyles = makeStyles({
     justifyContent: 'space-between',
     height: '80vh',
   },
-  SV: {
-    display: 'flex',
-    flexDirection: 'column',
-  },
 
   iconsHolder: {
     position: 'absolute',
@@ -38,6 +34,15 @@ const UseStyles = makeStyles({
     maxWidth: '800px',
     width: '80%',
     height: 'auto',
+  },
+  about: {
+    position: 'absolute',
+    right: '12%',
+    bottom: '10%',
+  },
+  CV: {
+    position: 'absolute',
+    top: '50%',
   },
 });
 export default UseStyles;

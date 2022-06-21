@@ -3,6 +3,7 @@ import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import InfoIcon from '@mui/icons-material/Info';
+import UseStyles from '../style';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -23,9 +24,12 @@ const About = () => {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const classes = UseStyles();
   return (
-    <div>
-      <InfoIcon onClick={handleOpen} />
+    <div className={classes.about}>
+      <span onClick={handleOpen} className='aboutIcon'>
+        <InfoIcon />
+      </span>
       <Modal
         open={open}
         onClose={handleClose}

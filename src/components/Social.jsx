@@ -9,16 +9,31 @@ const Social = () => {
   return (
     <div>
       <div className={classes.iconsHolder}>
-        <a href='.' className='icon'>
+        <a
+          href='https://github.com/molaraiche'
+          target='_blank'
+          rel='noreferrer'
+          className='icon'
+        >
           <GitHubIcon />
         </a>
-        <a href='.' className='icon'>
+        <a
+          href='https://twitter.com/molaraiche'
+          target='_blank'
+          rel='noreferrer'
+          className='icon'
+        >
           <TwitterIcon />
         </a>
-        <a href='.' className='icon'>
+        <a href='.' target='_blank' rel='noreferrer' className='icon'>
           <MailIcon />
         </a>
-        <a href='.' className='icon'>
+        <a
+          href='https://www.linkedin.com/in/molaraiche/'
+          target='_blank'
+          rel='noreferrer'
+          className='icon'
+        >
           <LinkedInIcon />
         </a>
       </div>
