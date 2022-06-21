@@ -1,5 +1,13 @@
 const CV = () => {
-  return <div>Im CV</div>;
+  return (
+    <div
+      style={{
+        display: 'none',
+      }}
+    >
+      Im CV
+    </div>
+  );
 };
 
 export default CV;

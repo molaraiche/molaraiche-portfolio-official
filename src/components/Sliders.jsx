@@ -1,8 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/effect-cube';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Autoplay, EffectCube, Pagination } from 'swiper';
+import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper';
+
 import One from '../data/one.jpg';
 import Two from '../data/two.jpg';
 import Three from '../data/three.jpg';
@@ -17,45 +18,33 @@ const Sliders = () => {
     <div
       style={{
         width: '800px',
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        textAlign: 'center',
       }}
     >
       <Swiper
+        autoplay={true}
         loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        cssMode={true}
         navigation={true}
-        effect={'cube'}
-        grabCursor={true}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
-        modules={[Autoplay, EffectCube, Pagination]}
+        pagination={false}
+        mousewheel={true}
+        keyboard={true}
+        modules={[Autoplay, Navigation, Pagination, Mousewheel, Keyboard]}
         className='mySwiper'
       >
-        <SwiperSlide>
-          <div className='sliderInfo'>info</div>
-
-          <img className={classes.picStyles} width='200px' src={One} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='sliderInfo'>info</div>
-
-          <img className={classes.picStyles} width='200px' src={Two} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='sliderInfo'>info</div>
-
-          <img className={classes.picStyles} width='200px' src={Three} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='sliderInfo'>info</div>
-          <img className={classes.picStyles} src={Four} alt='' />
-        </SwiperSlide>
+        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide>Slide 2</SwiperSlide>
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper>
     </div>
   );
