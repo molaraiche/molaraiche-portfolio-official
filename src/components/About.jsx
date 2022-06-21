@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import InfoIcon from '@mui/icons-material/Info';
-
 const style = {
   position: 'absolute',
   top: '50%',
@@ -27,9 +25,7 @@ const About = () => {
   const handleClose = () => setOpen(false);
   return (
     <div>
-      <Button onClick={handleOpen}>
-        <InfoIcon />
-      </Button>
+      <InfoIcon onClick={handleOpen} />
       <Modal
         open={open}
         onClose={handleClose}

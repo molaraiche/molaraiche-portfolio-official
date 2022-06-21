@@ -9,16 +9,16 @@ const Social = () => {
   return (
     <div>
       <div className={classes.iconsHolder}>
-        <a href='.' className={classes.icon}>
+        <a href='.' className='icon'>
           <GitHubIcon />
         </a>
-        <a href='.' className={classes.icon}>
+        <a href='.' className='icon'>
           <TwitterIcon />
         </a>
-        <a href='.' className={classes.icon}>
+        <a href='.' className='icon'>
           <MailIcon />
         </a>
-        <a href='.' className={classes.icon}>
+        <a href='.' className='icon'>
           <LinkedInIcon />
         </a>
       </div>
