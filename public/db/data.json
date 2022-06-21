@@ -1,0 +1,38 @@
+{
+  "Project one": {
+    "title": "project title",
+    "info": {
+      "one": "info one",
+      "two": "info two",
+      "three": "info three"
+    },
+    "poster": "./data/one.jpg"
+  },
+  "Project two": {
+    "title": "project title",
+    "info": {
+      "one": "info one",
+      "two": "info two",
+      "three": "info three"
+    },
+    "poster": "./data/two.jpg"
+  },
+  "Project three": {
+    "title": "project title",
+    "info": {
+      "one": "info one",
+      "two": "info two",
+      "three": "info three"
+    },
+    "poster": "./data/three.jpg"
+  },
+  "Project four": {
+    "title": "project title",
+    "info": {
+      "one": "info one",
+      "two": "info two",
+      "three": "info three"
+    },
+    "poster": "./data/four.jpg"
+  }
+}

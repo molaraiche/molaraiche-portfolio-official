@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import NavBar from './components/NavBar';
 import Sliders from './components/Sliders';
 import About from './components/About';
@@ -9,6 +9,14 @@ const App = () => {
   const [mode, setMode] = useState('dark');
   const classes = UseStyles();
   const modeHandler = () => setMode(mode === 'dark' ? 'light' : 'dark');
+  const fetchData = async () => {
+    const response = await fetch('./db/data.json');
+    const data = await response.json();
+    return console.log(data);
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div id={mode} className={classes.box}>
       <header>
