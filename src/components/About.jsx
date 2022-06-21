@@ -18,6 +18,8 @@ const style = {
   boxShadow: 24,
   p: 4,
   borderRadius: '8px',
+  fontFamily: 'Fira Sans',
+  fontStyle: 'italic',
 };
 const About = () => {
   const [open, setOpen] = useState(false);

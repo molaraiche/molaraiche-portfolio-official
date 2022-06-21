@@ -34,6 +34,11 @@ const UseStyles = makeStyles({
     justifyContent: 'space-between',
     left: '50px',
   },
+  picStyles: {
+    maxWidth: '800px',
+    width: '80%',
+    height: 'auto',
+  },
 });
 export default UseStyles;
 
