@@ -7,12 +7,13 @@ import CV from './components/CV';
 import UseStyles from './style';
 const App = () => {
   const [mode, setMode] = useState('dark');
+  const [datas, setData] = useState([]);
   const classes = UseStyles();
   const modeHandler = () => setMode(mode === 'dark' ? 'light' : 'dark');
   const fetchData = async () => {
     const response = await fetch('./db/data.json');
     const data = await response.json();
-    return console.log(data);
+    return setData(data);
   };
   useEffect(() => {
     fetchData();
@@ -26,7 +27,7 @@ const App = () => {
         <div className={classes.hero}>
           <Social />
           <div>
-            <Sliders />
+            <Sliders datas={datas} />
             <CV />
           </div>
           <About />

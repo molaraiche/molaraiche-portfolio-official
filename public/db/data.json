@@ -1,38 +1,58 @@
-{
-  "Project one": {
-    "title": "project title",
-    "info": {
-      "one": "info one",
-      "two": "info two",
-      "three": "info three"
+[
+  {
+    "pid": 1,
+    "title": "NetFilm",
+    "poster": "../assets/one.jpg",
+    "details": {
+      "d1": "React JS",
+      "d2": "React Router",
+      "d3": "React Icons",
+      "d4": "Fetch API"
     },
-    "poster": "./data/one.jpg"
+    "links": {
+      "source": "https://github.com/molaraiche/react-movie-app",
+      "livePreview": "https://movie-app-kappa-opal.vercel.app/"
+    }
   },
-  "Project two": {
-    "title": "project title",
-    "info": {
-      "one": "info one",
-      "two": "info two",
-      "three": "info three"
+  {
+    "pid": 1,
+    "title": "Todo List",
+    "poster": "../assets/two.jpg",
+    "details": {
+      "d1": "vanilla javaScript",
+      "d2": "HTML & CSS",
+      "d3": "Font Awesome"
     },
-    "poster": "./data/two.jpg"
+    "links": {
+      "source": "https://github.com/molaraiche/vanila-js-todo-app",
+      "livePreview": "https://molaraiche.github.io/vanila-js-todo-app/"
+    }
   },
-  "Project three": {
-    "title": "project title",
-    "info": {
-      "one": "info one",
-      "two": "info two",
-      "three": "info three"
+  {
+    "pid": 2,
+    "title": "Guess My Number",
+    "poster": "../assets/three.jpg",
+    "details": {
+      "d1": "vanilla javaScript",
+      "d2": "Simple HTML & CSS"
     },
-    "poster": "./data/three.jpg"
+    "links": {
+      "source": "https://github.com/molaraiche/vanilla-js-guess-my-number",
+      "livePreview": "https://molaraiche.github.io/vanilla-js-guess-my-number/"
+    }
   },
-  "Project four": {
-    "title": "project title",
-    "info": {
-      "one": "info one",
-      "two": "info two",
-      "three": "info three"
+  {
+    "pid": 3,
+    "title": "molaraiche Portfolio",
+    "poster": "../assets/four.jpg",
+    "details": {
+      "d1": "React JS",
+      "d2": "React icons",
+      "d3": "JSON data base"
     },
-    "poster": "./data/four.jpg"
+    "links": {
+      "source": "https://github.com/molaraiche/react-portfolio",
+      "livePreview": "https://molaraiche.vercel.app/"
+    }
   }
-}
+]

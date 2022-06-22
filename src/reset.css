@@ -155,15 +155,18 @@ input[type='number'] {
   font-size: 14px;
 }
 #dark .info,
-#light .in {
+#light .info {
   color: #fff;
 }
-#dark .info a,
-#light .info a {
+#dark .links a,
+#light .links a {
   color: #fff;
 }
 .SV {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.cvHolder {
+  display: none;
 }

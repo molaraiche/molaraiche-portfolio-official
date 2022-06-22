@@ -1,8 +1,9 @@
-import UseStyles from '../style';
-
 const CV = () => {
-  const classes = UseStyles;
-  return <button>Download CV</button>;
+  return (
+    <div className='cvHolder'>
+      <button>Download CV</button>
+    </div>
+  );
 };
 
 export default CV;
