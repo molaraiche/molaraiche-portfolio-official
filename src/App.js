@@ -25,12 +25,17 @@ const App = () => {
       </header>
       <div className='container'>
         <div className={classes.hero}>
-          <Social />
-          <div>
-            <Sliders datas={datas} />
-            <CV />
+          <div className='social-Content'>
+            <Social />
           </div>
-          <About />
+          <div className='projects'>
+            <CV />
+            <Sliders datas={datas} />
+          </div>
+
+          <div className='about-Content'>
+            <About />
+          </div>
         </div>
       </div>
     </div>

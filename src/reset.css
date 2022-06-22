@@ -66,7 +66,7 @@ input[type='number'] {
 }
 
 #dark svg {
-  color: #fff;
+  color: #e8ebf1;
 }
 #light svg {
   color: #1b3b6f;
@@ -156,17 +156,46 @@ input[type='number'] {
 }
 #dark .info,
 #light .info {
-  color: #fff;
+  color: #e8ebf1;
 }
 #dark .links a,
 #light .links a {
-  color: #fff;
+  color: #e8ebf1;
 }
-.SV {
+.social-Content,
+.about-Content {
+  width: 25%;
+}
+.projects {
+  height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.cvHolder button {
+  padding: 8px 40px;
+  border: none;
+  background-color: #007aff;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #e8ebf1;
+}
+.cvHolder button:hover {
+  background-color: #5f769a;
+}
+.closeModal {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
-.cvHolder {
-  display: none;
+.inputField {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+.inputField input {
+  padding: 8px;
+  margin: 5px;
+  width: 100%;
 }

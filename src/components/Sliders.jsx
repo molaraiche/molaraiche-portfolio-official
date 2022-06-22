@@ -46,67 +46,6 @@ const Sliders = ({ datas }) => {
             <img className='picStyles' src={data.poster} alt='' />
           </SwiperSlide>
         ))}
-
-        {/* <SwiperSlide>
-          <div className='info'>
-            <h1>Project title</h1>
-            <ul>
-              <li>one</li>
-              <li>Two</li>
-              <li>Three</li>
-            </ul>
-            <div className='links'>
-              <a href='.'>live</a>
-              <a href='.'>Source</a>
-            </div>
-          </div>
-          <img className='picStyles' src={One} alt='' />
-        </SwiperSlide> */}
-        {/* <SwiperSlide>
-          <div className='info'>
-            <h1>Project title</h1>
-            <ul>
-              <li> {data.title} </li>
-              <li>Two</li>
-              <li>Three</li>
-            </ul>
-            <div className='links'>
-              <a href='.'>live</a>
-              <a href='.'>Source</a>
-            </div>
-          </div>
-          <img className='picStyles' src={Two} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='info'>
-            <h1>Project title</h1>
-            <ul>
-              <li>one</li>
-              <li>Two</li>
-              <li>Three</li>
-            </ul>
-            <div className='links'>
-              <a href='.'>live</a>
-              <a href='.'>Source</a>
-            </div>
-          </div>
-          <img className='picStyles' src={Three} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className='info'>
-            <h1>Project title</h1>
-            <ul>
-              <li>one</li>
-              <li>Two</li>
-              <li>Three</li>
-            </ul>
-            <div className='links'>
-              <a href='.'>live</a>
-              <a href='.'>Source</a>
-            </div>
-          </div>
-          <img className='picStyles' src={Four} alt='' />
-        </SwiperSlide> */}
       </Swiper>
     </div>
   );

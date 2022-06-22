@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 import InfoIcon from '@mui/icons-material/Info';
 import UseStyles from '../style';
 const style = {
@@ -13,8 +14,7 @@ const style = {
   width: '80%',
   height: 'auto',
   bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
+  boxShadow: 0,
   p: 4,
   borderRadius: '8px',
   fontFamily: 'Fira Sans',
@@ -27,9 +27,9 @@ const About = () => {
   const classes = UseStyles();
   return (
     <div className={classes.about}>
-      <span onClick={handleOpen} className='aboutIcon'>
+      <Button onClick={handleOpen} className='aboutIcon'>
         <InfoIcon />
-      </span>
+      </Button>
       <Modal
         open={open}
         onClose={handleClose}
@@ -37,18 +37,22 @@ const About = () => {
         aria-describedby='modal-modal-description'
       >
         <Box sx={style}>
+          <div className='closeModal'>
+            {' '}
+            <Button onClick={handleClose}>X</Button>{' '}
+          </div>
           <Typography id='modal-modal-title' variant='h6' component='h2'>
             About
           </Typography>
           <Typography id='modal-modal-description' sx={{ mt: 2 }}>
-            Hi there ! Im Mohamed From Morocco from a small town called
-            CHICHAOUA, im a front end developer i start in 2021 until this
-            moment studying and know new things, i start with HTML, CSS in the
-            first month and i practice lot lot i work just with HTML CSS than i
-            move to JavaScript, i start diving in React JS in the start of 2022,
-            and here i am today working on making my roadmap done which is be a
-            MERN stack developer, i study web dev from udemy courses, youtube,
-            freeCodeCamp and still studying and learning more and more
+            Hi there ! I'm Mohamed From Morocco from a small town called
+            CHICHAOUA, I' m a front end developer i started in 2021 until this
+            moment studying and learning new things, i started with HTML, CSS in
+            the first month and I practiced a lot I used vanilla HTML CSS then I
+            moved to JavaScript, I started diving in ReactJS at the start of
+            2022, and here i am today grinding my roadmap which is be a MERN
+            stack developer, i study web dev from udemy courses, youtube,
+            freeCodeCamp and still studying and learning more and more .
           </Typography>
         </Box>
       </Modal>
