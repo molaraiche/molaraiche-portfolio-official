@@ -31,14 +31,14 @@ const Sliders = ({ datas }) => {
                 <li>{data.details.d3}</li>
               </ul>
               <div className='links'>
-                <a href={data.links.source} target='_blank' rel='noreferrer'>
-                  live
-                </a>
                 <a
                   href={data.links.livePreview}
                   target='_blank'
                   rel='noreferrer'
                 >
+                  live
+                </a>
+                <a href={data.links.source} target='_blank' rel='noreferrer'>
                   Source
                 </a>
               </div>
