@@ -31,21 +31,20 @@ const Social = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_4bfhx1s',
-        'YOUR_TEMPLATE_ID',
-        form.current,
-        'YOUR_PUBLIC_KEY'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    emailjs.sendForm(
+      'gmail',
+      'template_2m9c2rr',
+      form.current,
+      'wSBTaHlmVvLcwkP0O'
+    );
+
+    form.current.reset();
+  };
+  const thanksMsg = () => {
+    if (sendEmail) {
+      alert('message sent');
+      
+    }
   };
   return (
     <div>
@@ -94,14 +93,27 @@ const Social = () => {
               <div className='inputField'>
                 <form ref={form} onSubmit={sendEmail}>
                   <div className='form-grp'>
-                    <input type='text' name='' placeHolder='Full Name' id='' />
+                    <input
+                      required
+                      type='text'
+                      name='full_name'
+                      placeHolder='Full Name'
+                      id=''
+                    />
                   </div>
                   <div className='form-grp'>
-                    <input type='email' name='' placeholder='Email' id='' />
+                    <input
+                      required
+                      type='email'
+                      name='email'
+                      placeholder='Email'
+                      id=''
+                    />
                   </div>
                   <div className='form-grp'>
                     <textarea
-                      name=''
+                      required
+                      name='message'
                       placeHolder='Message'
                       id=''
                       cols='30'
@@ -109,7 +121,7 @@ const Social = () => {
                     ></textarea>
                   </div>
                   <div className='form-Btn'>
-                    <input type='submit' value='Send' />
+                    <input type='submit' onClick={thanksMsg} value='Send' />
                   </div>
                 </form>
               </div>
