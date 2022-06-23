@@ -38,13 +38,25 @@ const About = () => {
       >
         <Box sx={style}>
           <div className='closeModal'>
-            {' '}
-            <Button onClick={handleClose}>X</Button>{' '}
+            <Button onClick={handleClose}>X</Button>
           </div>
-          <Typography id='modal-modal-title' variant='h6' component='h2'>
+          <Typography
+            style={{ padding: '0px 20px' }}
+            id='modal-modal-title'
+            variant='h6'
+            component='h2'
+          >
             About
           </Typography>
-          <Typography id='modal-modal-description' sx={{ mt: 2 }}>
+          <Typography
+            style={{
+              textAlign: 'justify',
+              padding: '0px 20px',
+              lineHeight: '1,8rem',
+            }}
+            id='modal-modal-description'
+            sx={{ mt: 2 }}
+          >
             Hi there ! I'm Mohamed From Morocco from a small town called
             CHICHAOUA, I' m a front end developer i started in 2021 until this
             moment studying and learning new things, i started with HTML, CSS in

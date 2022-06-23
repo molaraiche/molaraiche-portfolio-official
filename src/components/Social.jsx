@@ -8,7 +8,6 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import TextField from '@mui/material/TextField';
 import emailjs from '@emailjs/browser';
 const style = {
   position: 'absolute',
@@ -27,7 +26,27 @@ const Social = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const classes = UseStyles();
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_4bfhx1s',
+        'YOUR_TEMPLATE_ID',
+        form.current,
+        'YOUR_PUBLIC_KEY'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   return (
     <div>
       <div className={classes.iconsHolder}>
@@ -73,14 +92,26 @@ const Social = () => {
             </Typography>
             <Typography id='modal-modal-description' sx={{ mt: 2 }}>
               <div className='inputField'>
-                <TextField style={{ margin: '5px' }} label='Name' />
-                <TextField style={{ margin: '5px' }} label='Email' />
-                <TextField style={{ margin: '5px' }} label='Message' />
-                <TextField
-                  style={{ margin: '10px' }}
-                  type='submit'
-                  value='Send'
-                />
+                <form ref={form} onSubmit={sendEmail}>
+                  <div className='form-grp'>
+                    <input type='text' name='' placeHolder='Full Name' id='' />
+                  </div>
+                  <div className='form-grp'>
+                    <input type='email' name='' placeholder='Email' id='' />
+                  </div>
+                  <div className='form-grp'>
+                    <textarea
+                      name=''
+                      placeHolder='Message'
+                      id=''
+                      cols='30'
+                      rows='8'
+                    ></textarea>
+                  </div>
+                  <div className='form-Btn'>
+                    <input type='submit' value='Send' />
+                  </div>
+                </form>
               </div>
             </Typography>
           </Box>

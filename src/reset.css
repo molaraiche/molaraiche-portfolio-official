@@ -190,12 +190,32 @@ input[type='number'] {
 .inputField {
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
-  margin: 10px;
 }
-.inputField input {
-  padding: 8px;
-  margin: 5px;
+
+.inputField div input {
   width: 100%;
+  padding: 8px;
+  margin: 5px 0px;
+  outline: none;
+  border: 1px solid #5f769a;
+  border-radius: 4px;
+}
+.inputField div textarea {
+  resize: vertical;
+  padding: 5px 0px 0px 5px;
+  outline: none;
+  border: 1px solid #5f769a;
+}
+.inputField div textarea:focus,
+.inputField div input:focus {
+  border: 1px solid #007aff;
+}
+.inputField .form-Btn input {
+  background-color: #007aff;
+  color: #e8ebf1;
+  cursor: pointer;
+}
+.inputField .form-Btn input:hover {
+  background-color: #5f769a;
 }
