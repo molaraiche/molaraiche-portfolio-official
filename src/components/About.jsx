@@ -46,7 +46,7 @@ const About = () => {
             variant='h6'
             component='h2'
           >
-            About
+            About:
           </Typography>
           <Typography
             style={{

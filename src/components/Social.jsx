@@ -9,6 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
 const style = {
   position: 'absolute',
   top: '50%',
@@ -26,9 +27,7 @@ const Social = () => {
   const [name, setName] = useState(false);
   const [email, setEmail] = useState(false);
   const [msg, setMsg] = useState(false);
-  console.log(`name ${name}`);
-  console.log(`email ${email}`);
-  console.log(`msg ${msg}`);
+
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const classes = UseStyles();
@@ -57,12 +56,12 @@ const Social = () => {
   };
   const thanksMsg = () => {
     if (name && email && msg) {
-      alert('msg sent');
+      swal(
+        'Thank you for Contacting me ! i will reply you as soon as possible!'
+      );
       setName(false);
       setEmail(false);
       setMsg(false);
-    } else {
-      alert('msg not sent');
     }
   };
   return (
@@ -105,10 +104,25 @@ const Social = () => {
           aria-describedby='modal-modal-description'
         >
           <Box sx={style}>
-            <Typography id='modal-modal-title' variant='h6' component='h2'>
-              Contact Me
+            <div className='closeModal'>
+              <Button onClick={handleClose}>X</Button>
+            </div>
+            <Typography
+              stlye={{
+                margin: '20px 0px',
+              }}
+              id='modal-modal-title'
+              variant='h6'
+              component='h2'
+            >
+              Contact Me:
             </Typography>
-            <Typography id='modal-modal-description' sx={{ mt: 2 }}>
+            <Typography
+              component={'span'}
+              variant='body1'
+              id='modal-modal-description'
+              sx={{ mt: 2 }}
+            >
               <div className='inputField'>
                 <form ref={form} onSubmit={sendEmail}>
                   <div className='form-grp'>
