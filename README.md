@@ -1,6 +1,6 @@
 # Project Details
 
-This is my portfolio Crated by REACT & MUI5
+This is my portfolio Crated by REACT & MUI5 and i push projects details using JSON file and fetch it using Async/await
 
 # Getting Started with Create React App
 
